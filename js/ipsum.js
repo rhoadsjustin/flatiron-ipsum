@@ -4,12 +4,12 @@
 $(document).ready(function(){
 
 //Start event listener for click
-$("#ipsum-form").submit(function() { 
+$("#ipsum-form").submit(function() {
   var paragraphs = '';
 
-//Determine which of the check boxes is checked 
+//Determine which of the check boxes is checked
   var chosen_button = $("#ipsum-form input[name='choice']:checked").val();
-  
+
 //Grab the paragraph number the user enters
   var paragraph_number = $("#paragraph_count").val();
 
@@ -17,15 +17,15 @@ $("#ipsum-form").submit(function() {
   var words = [];
 
 //Create an array of words to randomize later
-  var words_bob = ["bob", "reginald t moneybags", "mc hammer", "vanilla ice", "@withloudhands", "remote-control helicopters", "kill your idols", "github hoodie", "i don't care"];
-  var words_nobob = ["sunac", "rails", "febreze", "feelings friday", "drilling", "sinatra", "brita", "pizza", "beer", "number seven subs", "smoothie", "blue dog cafe", "shit avi says", "friday after flatiron"];  
+  var words_bob = ["y'all", "austin", "boots", "queso", "longhorn", "Congress Ave", "sogoodfoodatx", "sweat", "paddle boarding", "yoga", "SXSW", "eastside", "dirty sixth", "beer", "whiskey", "rainey st", "I can't find parking", "VIA 313", "dope"];
+  var words_nobob = ["General Assembly", "tech", "google", "apple", "traffic", "the greenbelt", "let's take a shot", "I miss uber", "beer", "parking tickets", "stephen f. austin", "elephant room", "what happens here changes the world", "barbecue"];
   var words_all = words_bob.concat(words_nobob);
 
 //ELSE IF determines which array of words to show the user
   if (chosen_button == "straight-up") {
    words = words_all;
 } else if (chosen_button == "all-bob") {
-   words = words_bob; 
+   words = words_bob;
 } else {
 words = words_nobob; }
 
@@ -69,7 +69,7 @@ for ( var x = 0; x < words.length; x++ ) {
   var sentence_capped = capitalizeFirstLetter(sentence);
 //End the first FOR loop that builds sentences from words
           }
-  sentence_group += sentence_capped;  
+  sentence_group += sentence_capped;
 //End the second FOR loop that builds sentence groups from sentences
        }
   paragraphs+='<p>' + sentence_group + '</p>';
@@ -79,11 +79,10 @@ for ( var x = 0; x < words.length; x++ ) {
 $("#print-paragraphs").empty().html(paragraphs);
 
 //Prevent form from actually submitting so page does not reload
-return false; 
+return false;
 
 //End jQuery event listener
   });
 
 //End document ready
 });
- 

@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -20,7 +20,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -48,7 +48,7 @@ table {
 
 /*Start Map CSS*/
 body{
-background-color:#333333;
+background-color:#CF5300;
 color:#ffffff;
 font-size: 1em;
 line-height: 1.5em;
@@ -100,7 +100,3 @@ strong {
     padding: 2px;
     width: 75px;
 }
-
-
-
-
